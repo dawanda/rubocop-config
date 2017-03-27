@@ -17,6 +17,13 @@ inherit_from:
 
 _The raw URL will stop working if this repository is made private._
 
+This will download the configuration file and cache it in the root directory of
+the project, we probably want to `.gitignore` this:
+
+```
+.rubocop-https---raw-githubusercontent-com-dawanda-rubocop-config-master-rubocop-yml
+```
+
 ### Code Climate
 
 Code Climate does not allow RuboCop to download the configuration by itself,
