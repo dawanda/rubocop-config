@@ -9,37 +9,46 @@ AllCops:
 
 ############################## DISABLED ##############################
 
-Style/Documentation:
-  Description: 'Document classes and non-namespace modules.'
-  Enabled: false
-
 Style/AlignArray:
   Description: Align the elements of an array literal if they span more than one line.
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#align-multiline-arrays'
-  Enabled: false
-
-Style/AsciiComments:
-  Enabled: false
-
-Style/NumericLiterals:
-  Enabled: false
-
-Style/BracesAroundHashParameters:
-  Description: 'Enforce braces style around hash parameters.'
-  Enabled: false
-
-Style/IndentHash:
-  Description: 'Checks the indentation of the first key in a hash literal.'
   Enabled: false
 
 # Align the elements of a hash literal if they span more than one line.
 Style/AlignHash:
   Enabled: false
 
+Style/AsciiComments:
+  Enabled: false
+
+Style/BracesAroundHashParameters:
+  Description: 'Enforce braces style around hash parameters.'
+  Enabled: false
+
+Style/Documentation:
+  Description: 'Document classes and non-namespace modules.'
+  Enabled: false
+
+Style/IndentHash:
+  Description: 'Checks the indentation of the first key in a hash literal.'
+  Enabled: false
+
 Style/Lambda:
   Enabled: false
 
+Style/NumericLiterals:
+  Enabled: false
+
 ############################## ENABLED ##############################
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 20 # It would be better to have it set to 10 according to our style guide, but for now 20 will do...
+
+Metrics/ParameterLists:
+  Max: 4
 
 Style/Alias:
   EnforcedStyle: prefer_alias_method
@@ -63,12 +72,6 @@ Style/AlignParameters:
     - with_first_parameter
     - with_fixed_indentation
 
-Style/MultilineOperationIndentation:
-  EnforcedStyle: indented
-
-Style/SpaceAroundOperators:
-  AllowForAlignment: true
-
 Style/BlockDelimiters:
   EnforcedStyle: semantic
   FunctionalMethods:
@@ -85,14 +88,11 @@ Style/BlockDelimiters:
     - xit
     - specify
 
-Metrics/ParameterLists:
-  Max: 4
-
-Metrics/MethodLength:
-  Max: 20 # It would be better to have it set to 10 according to our style guide, but for now 20 will do...
-
-Metrics/LineLength:
-  Max: 120
+Style/MultilineOperationIndentation:
+  EnforcedStyle: indented
 
 Style/SignalException:
   EnforcedStyle: semantic
+
+Style/SpaceAroundOperators:
+  AllowForAlignment: true
