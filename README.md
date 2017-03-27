@@ -35,6 +35,8 @@ Doing this lets us continue to use the 24h caching that RuboCop does in
 development, but also always have the most up to date version in CI without
 ever manually updating the file.
 
+In the `.codeclimate.yml`
+
 ```yaml
 prepare:
   fetch:
