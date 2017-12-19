@@ -9,13 +9,13 @@ AllCops:
 
 ############################## DISABLED ##############################
 
-Style/AlignArray:
+Layout/AlignArray:
   Description: Align the elements of an array literal if they span more than one line.
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#align-multiline-arrays'
   Enabled: false
 
 # Align the elements of a hash literal if they span more than one line.
-Style/AlignHash:
+Layout/AlignHash:
   Enabled: false
 
 Style/AsciiComments:
@@ -29,7 +29,7 @@ Style/Documentation:
   Description: 'Document classes and non-namespace modules.'
   Enabled: false
 
-Style/IndentHash:
+Layout/IndentHash:
   Description: 'Checks the indentation of the first key in a hash literal.'
   Enabled: false
 
@@ -53,7 +53,7 @@ Metrics/ParameterLists:
 Style/Alias:
   EnforcedStyle: prefer_alias_method
 
-Style/AlignParameters:
+Layout/AlignParameters:
   # Alignment of parameters in multi-line method calls.
   #
   # The `with_first_parameter` style aligns the following lines along the same
@@ -88,11 +88,11 @@ Style/BlockDelimiters:
     - xit
     - specify
 
-Style/MultilineOperationIndentation:
+Layout/MultilineOperationIndentation:
   EnforcedStyle: indented
 
 Style/SignalException:
   EnforcedStyle: semantic
 
-Style/SpaceAroundOperators:
+Layout/SpaceAroundOperators:
   AllowForAlignment: true
