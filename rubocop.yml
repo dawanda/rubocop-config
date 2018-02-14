@@ -44,6 +44,10 @@ Style/NumericLiterals:
 Metrics/LineLength:
   Max: 120
 
+Metrics/BlockLength:
+  Exclude:
+    - '**/*_spec.rb'
+
 Metrics/MethodLength:
   Max: 20 # It would be better to have it set to 10 according to our style guide, but for now 20 will do...
 
