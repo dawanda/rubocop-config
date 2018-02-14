@@ -42,6 +42,9 @@ Style/NumericLiterals:
 Style/PercentLiteralDelimiters:
   Enabled: false
 
+Style/SymbolArray:
+  Enabled: false
+
 ############################## ENABLED ##############################
 
 Metrics/LineLength:
