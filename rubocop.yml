@@ -39,6 +39,9 @@ Style/Lambda:
 Style/NumericLiterals:
   Enabled: false
 
+Style/PercentLiteralDelimiters:
+  Enabled: false
+
 ############################## ENABLED ##############################
 
 Metrics/LineLength:
