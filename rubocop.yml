@@ -18,6 +18,10 @@ Layout/AlignArray:
 Layout/AlignHash:
   Enabled: false
 
+Layout/IndentHash:
+  Description: 'Checks the indentation of the first key in a hash literal.'
+  Enabled: false
+
 Style/AsciiComments:
   Enabled: false
 
@@ -27,10 +31,6 @@ Style/BracesAroundHashParameters:
 
 Style/Documentation:
   Description: 'Document classes and non-namespace modules.'
-  Enabled: false
-
-Layout/IndentHash:
-  Description: 'Checks the indentation of the first key in a hash literal.'
   Enabled: false
 
 Style/Lambda:
@@ -46,24 +46,6 @@ Style/SymbolArray:
   Enabled: false
 
 ############################## ENABLED ##############################
-
-Metrics/LineLength:
-  Max: 120
-
-Metrics/BlockLength:
-  Exclude:
-    - '**/*_spec.rb'
-
-Metrics/MethodLength:
-  Max: 20 # It would be better to have it set to 10 according to our style guide, but for now 20 will do...
-
-Metrics/ParameterLists:
-  Max: 4
-  Exclude:
-    - "**/*_spec.rb"
-
-Style/Alias:
-  EnforcedStyle: prefer_alias_method
 
 Layout/AlignParameters:
   # Alignment of parameters in multi-line method calls.
@@ -84,6 +66,40 @@ Layout/AlignParameters:
     - with_first_parameter
     - with_fixed_indentation
 
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+Layout/SpaceAroundOperators:
+  AllowForAlignment: true
+
+Metrics/BlockLength:
+  Exclude:
+    - '**/*_spec.rb'
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 20 # It would be better to have it set to 10 according to our style guide, but for now 20 will do...
+
+Metrics/ModuleLength:
+  Exclude:
+    - "**/*_spec.rb"
+
+Metrics/ParameterLists:
+  Max: 4
+  Exclude:
+    - "**/*_spec.rb"
+
+RSpec/MultipleExpectations:
+  Max: 10
+
+RSpec/NestedGroups:
+  Max: 6
+
+Style/Alias:
+  EnforcedStyle: prefer_alias_method
+
 Style/BlockDelimiters:
   EnforcedStyle: semantic
   FunctionalMethods:
@@ -100,21 +116,5 @@ Style/BlockDelimiters:
     - xit
     - specify
 
-Layout/MultilineOperationIndentation:
-  EnforcedStyle: indented
-
 Style/SignalException:
   EnforcedStyle: semantic
-
-Layout/SpaceAroundOperators:
-  AllowForAlignment: true
-
-Metrics/ModuleLength:
-  Exclude:
-    - "**/*_spec.rb"
-
-RSpec/MultipleExpectations:
-  Max: 10
-
-RSpec/NestedGroups:
-  Max: 6
