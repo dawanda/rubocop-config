@@ -22,6 +22,12 @@ Layout/IndentHash:
   Description: 'Checks the indentation of the first key in a hash literal.'
   Enabled: false
 
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Enabled: false
+
 Style/AsciiComments:
   Enabled: false
 
@@ -90,12 +96,6 @@ Metrics/ParameterLists:
   Max: 4
   Exclude:
     - "**/*_spec.rb"
-
-RSpec/MultipleExpectations:
-  Max: 10
-
-RSpec/NestedGroups:
-  Max: 6
 
 Style/Alias:
   EnforcedStyle: prefer_alias_method
