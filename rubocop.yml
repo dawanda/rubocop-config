@@ -59,6 +59,8 @@ Metrics/MethodLength:
 
 Metrics/ParameterLists:
   Max: 4
+  Exclude:
+    - "**/*_spec.rb"
 
 Style/Alias:
   EnforcedStyle: prefer_alias_method
@@ -106,3 +108,13 @@ Style/SignalException:
 
 Layout/SpaceAroundOperators:
   AllowForAlignment: true
+
+Metrics/ModuleLength:
+  Exclude:
+    - "**/*_spec.rb"
+
+RSpec/MultipleExpectations:
+  Max: 10
+
+RSpec/NestedGroups:
+  Max: 6
