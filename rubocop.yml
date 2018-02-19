@@ -94,8 +94,6 @@ Metrics/ModuleLength:
 
 Metrics/ParameterLists:
   Max: 4
-  Exclude:
-    - "**/*_spec.rb"
 
 Style/Alias:
   EnforcedStyle: prefer_alias_method
