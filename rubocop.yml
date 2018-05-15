@@ -51,6 +51,9 @@ Style/PercentLiteralDelimiters:
 Style/SymbolArray:
   Enabled: false
 
+RSpec/MessageSpies:
+  Enabled: false
+
 ############################## ENABLED ##############################
 
 Layout/AlignParameters:
